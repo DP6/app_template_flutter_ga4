@@ -1,0 +1,1 @@
+# Inicializando o repositorio do app template para testes

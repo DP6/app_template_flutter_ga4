@@ -1,10 +1,10 @@
 import 'dart:async';
 
 import 'package:firebase_analytics/firebase_analytics.dart';
+// ignore: depend_on_referenced_packages
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_analytics/observer.dart';
-import 'tabs_page.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({
+  const MyHomePage({
     Key? key,
     required this.title,
     required this.analytics,
@@ -49,6 +49,7 @@ class MyHomePage extends StatefulWidget {
   final FirebaseAnalyticsObserver observer;
 
   @override
+  // ignore: library_private_types_in_public_api
   _MyHomePageState createState() => _MyHomePageState();
 }
 
@@ -86,6 +87,28 @@ class _MyHomePageState extends State<MyHomePage> {
             'price': '1567.98',
             'currency': 'brl',
             'index': '2'
+          }
+        ],
+      },
+    );
+  }
+
+  Future<void> _selectItem() async {
+    await widget.analytics.logEvent(
+      name: 'select_item',
+      parameters: {
+        'screenName': "/testeUA_SchemaGA4",
+        'item_list_name': 'Teste UA Schema GA4',
+        'items': [
+          {
+            'item_id': '12345678',
+            'item_name': 'sofa',
+            'item_category': 'moveis',
+            'item_variant': 'preto',
+            'item_brand': 'tokstok',
+            'price': '2132.47',
+            'currency': 'brl',
+            'index': '1'
           }
         ],
       },
@@ -137,22 +160,16 @@ class _MyHomePageState extends State<MyHomePage> {
             child: const Text('View Item List'),
           ),
           MaterialButton(
+            onPressed: _selectItem,
+            child: const Text('Select Item'),
+          ),
+          MaterialButton(
             onPressed: _purchase,
             child: const Text('Purchase'),
           ),
           Text(_message,
               style: const TextStyle(color: Color.fromARGB(255, 0, 155, 0))),
         ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.of(context).push(MaterialPageRoute<TabsPage>(
-              settings: const RouteSettings(name: TabsPage.routeName),
-              builder: (BuildContext context) {
-                return TabsPage(widget.observer);
-              }));
-        },
-        child: const Icon(Icons.tab),
       ),
     );
   }

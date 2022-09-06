@@ -1,5 +1,5 @@
 # Criando um app template em flutter para implementação e homologação de firebase analytics
-=============
+===
 Autor: `Juan Menezes`
 Hoje estou para falar especificamente sobre Flutter, Firebase Analytics e até um pouco da integração disso tudo com o GA4, irei passar rapidamente pela criação de um app que irá testar nossos eventos até a homologação deles e como visualizar isso na nossa propriedade do ga4, antes de mais nada segue a documentação do plugin oficial da google e mantido em conjunto pela comunidade:
 [doc](https://pub.dev/documentation/firebase_analytics/latest/firebase_analytics/FirebaseAnalytics-class.html)

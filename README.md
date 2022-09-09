@@ -14,3 +14,6 @@ Entrando no campo de qual a principal diferença entre uma coleta em flutter e n
 
 É necessário criar um data stream de app no firebase/ga4 com o nome de app_template_flutter_ga4 e substituir o arquivo
 
+
+o arquivo está em android > app > google-services.json
+

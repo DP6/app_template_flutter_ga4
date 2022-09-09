@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.teste_ua_ga4">
+    package="com.example.app_template_flutter_ga4">
    <application
-        android:label="teste_ua_ga4"
+        android:label="app_template_flutter_ga4"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

@@ -1,6 +1,6 @@
 {
-    "name": "teste_ua_ga4",
-    "short_name": "teste_ua_ga4",
+    "name": "app_template_flutter_ga4",
+    "short_name": "app_template_flutter_ga4",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

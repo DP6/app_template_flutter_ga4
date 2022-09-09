@@ -1,4 +1,4 @@
-package com.example.teste_ua_ga4
+package com.example.app_template_flutter_ga4
 
 import io.flutter.embedding.android.FlutterActivity
 

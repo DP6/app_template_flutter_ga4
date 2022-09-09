@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "teste_ua_ga4" "\0"
+            VALUE "FileDescription", "app_template_flutter_ga4" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "teste_ua_ga4" "\0"
+            VALUE "InternalName", "app_template_flutter_ga4" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "teste_ua_ga4.exe" "\0"
-            VALUE "ProductName", "teste_ua_ga4" "\0"
+            VALUE "OriginalFilename", "app_template_flutter_ga4.exe" "\0"
+            VALUE "ProductName", "app_template_flutter_ga4" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

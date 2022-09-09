@@ -9,3 +9,8 @@ Obs.: Caso você já seja mais experiente com tudo isso que eu citei acima e só
 Iremos começar pelo início obviamente que é “mas o que diabos é flutter?”, bom a google tem uma maneira pomposa mas direta de explicar: **“Flutter é o kit de ferramentas de IU do Google para criar aplicativos bonitos e nativamente compilados para dispositivos móveis, web, desktop e incorporados a partir de uma única base de código.”**.
 
 Entrando no campo de qual a principal diferença entre uma coleta em flutter e nativos eu diria que é praticamente nenhuma, diferente de outros tipos de tecnologia cross-plataform do mercado o flutter é mantido pela própria google, com isso trás muitas soluções otimizadas para os serviços da mesma como é o caso do firebase analytics. Sua implementação é muito similar a de nativos, assim como seu desempenho. Sendo assim, a sua principal vantagem é poder usar apenas um código para todas as plataformas.
+
+**Configuração necessário para funcionar de forma provisioria até a documentação estar completa**.
+
+É necessário criar um data stream de app no firebase/ga4 com o nome de app_template_flutter_ga4 e substituir o arquivo
+
